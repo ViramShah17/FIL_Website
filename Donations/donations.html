@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Frugal Innovation Lab - Donations</title>
+  <link rel="stylesheet" type="text/css" media="screen" href="../Styles/style.css">
+</head>
+<body>
+
+<div id="navigation">
+    <a href="../Home/index.html" style="float:left;"><img src="../Images/logo_white.png" style="width:200px;"></a>
+    <a href="../Resume/studentresume.html">resumes</a>
+    <a href="../Proposals/project_proposal.html">proposals</a>
+    <a href="https://www.facebook.com/frugalinnovation.lab?fref=ts" target="_blank">media and events</a>
+    <a href="../Donations/donations.html">donate</a>
+    <a href="../Team/team.html">the team</a>
+    <a href="../Projects/projects.xml">projects</a>
+    <a href="../Get Involved/involved.html">get involved</a>
+</div>
+
+<!-- put all content in "wrapper" div -->
+<div class="wrapper">
+
+	<h1>Donate</h1>
+	<hr width="100%" color="#BABABA" align="left" width="2px" noshade>
+	Thank you for choosing to donate! Please select a level with which you would like to contribute to our work.
+	<br/><br/>
+
+	<br>
+
+	<form action="Donations/donation_complete.php" method="post">
+		First Name: <input type="text" name="fname"><br><br>
+		Last Name: <input type="text" name="lname"><br><br>
+		E-mail: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="email" place><br><br/><br/>
+		Donation Amount: <br><br/>
+
+		<input type="radio" name="level" value="level1"><h2>Level 1:&nbsp;&nbsp;$13.30</h2></input><br/>
+		Supports the wages and benefits of an undergraduate student to work for one hour on a FIL Project!<br/><br/>
+
+		<input type="radio" name="level" value="level2"><h2>Level 2:&nbsp;&nbsp;$17.65</h2></input><br/>
+		Supports the wages and benefits of a graduate student to work for one hour an a FIL Project!<br/><br/>
+
+		<input type="radio" name="level" value="level3"><h2>Level 3:&nbsp;&nbsp;$39.95</h2></input><br/>
+		Purchases one Raspberry Pi (or similar products) for the development of mobile applications, smart sensors, or other solutions for our field-based social enterprises.<br/><br/>
+
+		<input type="radio" name="level" value="level4"><h2>Level 4:&nbsp;&nbsp;$78.60</h2></input><br/>
+		Covers the average cost of admittance to a FIL related conference for a faculty/staff member.<br/><br/>
+
+		<input type="radio" name="level" value="level5"><h2>Level 5:&nbsp;&nbsp;$500.00</h2></input><br/>
+		Provides a Senior Design team with enough money to buy materials for their prototype.<br/><br/>
+
+		<input type="radio" name="level" value="level6"><h2>Level 6:&nbsp;&nbsp;$898.00</h2></input><br/>
+		Accommodates one student’s air fare to South America to field test their prototypes with FIL university and enterprise partners.<br/><br/>
+
+		<input type="radio" name="level" value="level7"><h2>Level 7:&nbsp;&nbsp;$1,500.00</h2></input><br/>
+		Makes you exceptionally awesome.<br/><br/>
+
+	<!--		<table>
+		<tr>
+			<td nowrap><input type="radio" name="level" value="level1">Level 1</input></td>
+			<td>$13.30</td>
+			<td>Supports the wages and benefits of an undergraduate student to work for one hour on a FIL Project!</td>
+		</tr>
+		<tr>
+			<td nowrap><input type="radio" name="level" value="level2">Level 2</input></td>
+			<td>$17.65</td>
+			<td>Supports the wages and benefits of a graduate student to work for one hour an a FIL Project!</td>
+		</tr>
+		<tr>
+			<td nowrap><input type="radio" name="level" value="level3">Level 3</input></td>
+			<td>$39.95</td>
+			<td>Purchases one Raspberry Pi (or similar products) for the development of mobile applications, smart sensors, or other solutions for our field-based social enterprises.</td>
+		</tr>
+		<tr>
+			<td nowrap><input type="radio" name="level" value="level4">Level 4</input></td>
+			<td>$78.60</td>
+			<td>Covers the average cost of admittance to a FIL related conference for a faculty/staff member.</td>
+		</tr>
+		<tr>
+			<td nowrap><input type="radio" name="level" value="level5">Level 5</input></td>
+			<td>$500</td>
+			<td>Provides a Senior Design team with enough money to buy materials for their prototype.</td>
+		</tr>
+		<tr>
+			<td nowrap><input type="radio" name="level" value="level6">Level 6</input></td>
+			<td>$898</td>
+			<td>Accommodates one student’s air fare to South America to field test their prototypes with FIL university and enterprise partners.</td>
+		</tr>
+		<tr>
+			<td nowrap><input type="radio" name="level" value="level6">Level 7</input></td>
+			<td>$1,500</td>
+			<td>Makes you exceptionally awesome.</td>
+		</tr>
+	</table> -->
+
+
+	<!-- 	<ol style="list-style-type:none;">
+			<li><input type="radio" name="level" value="level1">Level 1 ($13.30)<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Supports the wages and benefits of an undergraduate student to work for one hour on a FIL Project!</li>
+			<li><input type="radio" name="level" value="level2">Level 2 ($17.65)<br/>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Supports the wages and benefits of a graduate student to work for one hour an a FIL Project!</li>
+			<li><input type="radio" name="level" value="level3">Level 3 ($39.95)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Purchases one Raspberry Pi (or similar products) for the development of mobile applications, smart sensors, or other solutions for our field-based social enterprises.</li>
+			<li><input type="radio" name="level" value="level4">Level 4 ($78.60)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Covers the average cost of admittance to a FIL related conference for a faculty/staff member.</li>
+			<li><input type="radio" name="level" value="level5">Level 5 ($500)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Provides a Senior Design team with enough money to buy materials for their prototype.</li>
+			<li><input type="radio" name="level" value="level6">Level 6 ($898)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Accommodates one student’s air fare to South America to field test their prototypes with FIL university and enterprise partners.</li>
+			<li><input type="radio" name="level" value="level7">Level 7 ($1,500)<br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			Makes you exceptionally awesome.</li>
+		</ol>	 -->
+		<br/><br/>
+		<input type="submit">
+	</form>
+
+</div>
+</body>
+</html>

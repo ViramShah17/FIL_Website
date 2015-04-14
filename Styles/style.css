@@ -1,0 +1,158 @@
+body {
+	background-color:#fff;
+	background-image:url(../Images/grid.gif);
+	background-attachment:fixed;
+	font-family:Helvetica, sans-serif;
+	font-size:18px;
+	margin-top:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-bottom:0px;
+	overflow:auto;
+}
+
+#backgrounddiv {
+	width:100%;
+	height: 1100px;
+	z-index:5;
+}
+
+#logo {
+	position:absolute;
+	display:block;
+	top:160px;
+	left:0;
+	right:350px;
+	margin:auto;
+	z-index:100;
+    width:600px;
+}
+
+a {
+	text-decoration:none;
+	z-index:1000;
+}
+
+.link {position:relative; color:red;}
+
+.subtext {color:#909090;}
+
+a:hover {
+	color:#BABABA;
+}
+
+.wrapper {
+	background-color:#fff;
+	width:60%;
+	position:static;
+	height:100%;
+	padding-left:80px;
+	padding-right:80px;
+	padding-top:120px;
+	padding-bottom:100px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:10;
+}
+
+.team {
+    max-width:95%;
+    top:0px;
+    padding:5px;
+}
+
+
+td {
+	vertical-align:top;
+	max-width:110px;
+	padding-bottom:10px;
+}
+
+.spons {
+    //border: 2px solid black;
+    //border-radius: 5px;
+    vertical-align:middle;
+}
+
+#navigation {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	color: #ffffff;
+	height: 45px;
+	text-align: center;
+	padding-top: 30px;
+	/* Adds shadow to the bottom of the bar */
+	-webkit-box-shadow: 0px 0px 8px 0px #000000;
+	-moz-box-shadow: 0px 0px 8px 0px #000000;
+	box-shadow: 0px 0px 8px 0px #000000;
+	/* Adds the transparent background */
+	background-color: rgba(1, 1, 1, 0.8);
+	color: rgba(1, 1, 1, 0.8);
+	z-index:2000;
+}
+
+#navigation a {
+	font-size: 11px;
+	padding-right: 60px;
+	color: white;
+	text-decoration: none;
+	text-transform:uppercase;
+	font-weight:bold;
+	float:right;
+	z-index:9000;
+}
+
+#navigation img {
+	float:left;
+	margin-left:50px;
+	z-index:9000;
+}
+
+#navigation a:hover {
+	color: #828282;
+} 
+
+#arrow {
+	position:absolute;
+	bottom:200px;
+	left:50%;
+	transform: translate(-50%, -50%);
+	z-index:5000;
+	width:70px;
+}
+
+.anchorsection {
+	position:relative;
+	padding-top:120px;
+	z-index:5;
+}
+
+h1 {
+	margin-top:15px;
+	font-size:55px;
+	color:#828282;
+}
+
+h2 {
+	margin-top:15px;
+	font-size:16px;
+	color:#828282;
+	display:inline;
+	line-height:18px;
+}
+
+h3 {
+	font-size:14px;
+	color:#828282;
+	display:inline;
+	line-height:13px;
+}
+
+hr {
+	color:#BABABA;
+	margin-top:-10px;
+	height:0.001px;
+	margin-bottom:40px;
+}
+

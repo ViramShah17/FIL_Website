@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="../Styles/style.css">
+  <title>Frugal Innovation Lab - Post to Forum</title>
+</head>
+<body>
+    <div id="navigation">
+        <a href="../Home/index.html" style="float:left;"><img src="../Images/logo_white.png" style="width:200px;">
+            </a>
+        <a href="../Get Involved/involved.html">get involved</a>
+        <a href="../Projects/projects.xml">projects</a>
+        <a href="../Team/involved.html">mobile lab</a>
+        <a href="../Team/team.html">team & partners</a>
+        <a href="https://www.facebook.com/frugalinnovation.lab?fref=ts" target="_blank">media and events</a>
+    </div>
+<!-- put all content in "wrapper" div-->
+<div class="wrapper">
+	<h1>Get Involved</h1>
+	<hr width="100%" color="#BABABA" align="left" width="2px" noshade>
+    <p>Participate in Frugal Projects! Click the links below to view more options. </p>
+    
+    
+    <a href="#join" class="link">join</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#propose" class="link">propose</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#advise" class="link">advise</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#donate" class="link">donate</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#other" class="link">other</a>
+    </br></br>
+    <div style="display:inline;">
+        <a class="anchorsection" name="join"><h2>JOIN&nbsp;&nbsp;</h2></a>
+        </br>
+        <hr width="100%" color="#BABABA" align="left" width="2px" noshade/>
+    </div>
+    <br><br/>
+    <div style="display:inline;">
+        <a class="anchorsection" name="propose"><h2>PROPOSE&nbsp;&nbsp;</h2>
+        </a>
+        </br></br></br>
+        <hr width="100%" color="#BABABA" align="left" width="2px" noshade/>
+        Have any ideas for the future of the Frugal Innovation Lab?
+        Potential partners can submit their ideas here!
+        </br></br>
+        
+        <form action="proposal_complete.php" method="post">
+            
+            YOUR INFORMATION<br/><br/>
+            <hr width="50%" color="#BABABA" align="left" width="2px" noshade/>
+            
+            Name *<br/>
+            <input type="text" name="FirstName" placeholder="First" style="max-width:130px;" required/>
+            <input type="text" name="LastName" placeholder="Last" style="max-width:130px;" required/><br><br>
+                    
+            Email Address *<br/>
+            <input type="email" name="Email" required/><br><br>
+                        
+            Your Organization's Website *<br/>
+            <input type="url" name="Website" value="http://" required/><br/><br/>
+                            
+            Your Role/Title *<br/>
+            <small class="subtext">CEO</small><br/>
+            <input type="text" name="Title" required/>
+                                
+                                
+            <br><br/>
+            PROJECT DESCRIPTION<br/><br/>
+            <hr width="50%" color="#BABABA" align="left" width="2px" noshade/>
+                                
+            Project Title *
+            <input type="text" name="ProjectTitle" required/><br/><br/>
+                                    
+            Project Category (Most Applicable) *<br/>
+            <small class="subtext">How would you classify your project?</small><br/>
+            <select name="Category" required>
+                <option name="Category" value="Renewable_Energy">Renewable Energy</option>
+                <option name="Category" value="Public_Health">Public Health</option>
+                <option name="Category" value="Clean_Water">Clean Water</option>
+                <option name="Category" value="Agriculture">Agriculture</option>
+                <option name="Category" value="Livelihood_Devp">Livelihood Development</option>
+                <option name="Category" value="Mobile_Tools">Mobile Tools</option>
+                <option name="Category" value="Other">Other</option>
+            </select>
+            <br/><br/>
+            Project Summary *<br/>
+            <small class="subtext">In a paragraph, please briefly describe the project.</small><br/>
+            <textarea rows="7" cols="30" name="ProjectIdea" required></textarea>
+            <br/><br/>
+            
+            Project Partners *<br/>
+            <small class="subtext">Are there any other organizations/schools working with you on this particular project? If yes, please list.</small><br/>
+            <input type="text" name="Partners" required><br/><br/>
+                
+            Outcome of Project *<br/>
+            <small class="subtext">What do you want the result of this project to be?</small><br/>
+            <input type="text" name="Outcome" placeholder="e.g. A working prototype of a mobile application for artisans in Uganda to have better market access." required><br/><br/>
+                
+            <br><br/>
+            PROJECT SPECIFICATIONS<br/><br/>
+            <hr width="50%" color="#BABABA" align="left" width="2px" noshade>
+            
+            Timeline *<br/>
+            <small class="subtext">Give us an idea of scope - how long do you think the project will take, and when do you need the outcome to be accomplished (end date)?</small><br/>
+            <input type="text" name="Timeline" placeholder="e.g. To achieve the desired outcome, we believe the project will take at least 8 months. Ideally, we would have ..." required><br/><br/>
+                
+            Commitment of Your Team *<br/>
+            <small class="subtext">How much time do you have to mentor your student team during the project? (Per Week)</small><br/>
+            <select name="Commitment" required>
+                <option name="Commitment" value="30Min">30 Minutes</option>
+                <option name="Commitment" value="1Hr">1 Hour</option>
+                <option name="Commitment" value="2Hr">2 Hours</option>
+                <option name="Commitment" value="Flexible">Flexible based on student needs</option>
+            </select><br/><br/>
+            
+            Immersion Hosting *<br/>
+            <small class="subtext">Is there the possibility of your organization hosting students in the field?</small><br/>
+            <select name="Immersion">
+                <option name="Immersion" value="Yes">Yes</option>
+                <option name="Immersion" value="No">No</option>
+                <option name="Immersion" value="Depends">Depends</option>
+            </select><br/><br/>
+            
+            Disciplines Required *<br/>
+            <legend name="Disciplines" required><small class="subtext">What qualifications do you need in a student team?</small></legend>
+            <input type="checkbox" name="Disciplines[]" value="Bioengineering" style="width:20px;">Bioengineering</input><br/>
+            <input type="checkbox" name="Disciplines[]" value="ComputerEngineering" style="width:20px;">Computer Engineering</input><br/>
+            <input type="checkbox" name="Disciplines[]" value="CivilEngineering" style="width:20px;">Civil Engineering</input><br/>
+                <input type="checkbox" name="Disciplines[]" value="MechanicalEngineering" style="width:20px;">Mechanical Engineering</input><br/>
+            <input type="checkbox" name="Disciplines[]" value="ElectricalEngineering" style="width:20px;">Electrical Engineering</input><br/>
+            <input type="checkbox" name="Disciplines[]" value="Business" style="width:20px;">Business</input><br/>
+            <input type="checkbox" name="Disciplines[]" value="Law" style="width:20px;">Law</input><br/>
+            <input type="checkbox" name="Disciplines[]" value="PublicHealth" style="width:20px;">Public Health</input><br/>
+            <input type="checkbox" name="Disciplines[]" value="Humanities" style="width:20px;">Humanities</input><br/>
+            <input type="checkbox" name="Disciplines[]" value="Sciences" style="width:20px;">Sciences (Biology, Environmental, etc.)</input><br/>
+            <input type="checkbox" name="Disciplines[]" value="PublicPolicy" style="width:20px;">Public Policy</input><br/>
+            <input type="checkbox" name="Disciplines[]" value="Other" style="width:20px;">Other</input><br/><br/>
+            
+            Funding *<br/>
+            <small class="subtext">What funds are available from you/your organization to support a project team to develop your solution?</small><br/>
+            <input type="text" name="Funding" value="$" required><br/><br/>
+                                                                
+            Intellectual Property *<br/>
+            <small class="subtext">Are there any IP considerations going into the project that we need to be aware of? Also, what expectations does your organization have regarding IP developed with the Frugal Innovation Lab?</small><br/>
+            <input type="text" name="IntellectualProperty" required>
+                
+                <br><br/>
+                THANK YOU!<br/><br/>
+                <hr width="50%" color="#BABABA" align="left" width="2px" noshade>
+                
+                <legend name="Hear">How did you hear about us?</legend>
+                <input type="checkbox" name="Hear[]" value="Tech" style="width:20px;">Tech Awards / Tech Museum<br/>
+                    <input type="checkbox" name="Hear[]" value="GSBI" style="width:20px;">GSBI / CSTS<br/>
+                        <input type="checkbox" name="Hear[]" value="FieldPartners" style="width:20px;">Field Partners<br/>
+                            <input type="checkbox" name="Hear[]" value="UniversityPartners" style="width:20px;">University Partners<br/>
+                                <input type="checkbox" name="Hear[]" value="CorporatePartners" style="width:20px;">Corporate Partners<br/>
+                                    <input type="checkbox" name="Hear[]" value="SearchEngine" style="width:20px;">Search Engine<br/>
+                                        <input type="checkbox" name="Hear[]" value="Other" style="width:20px;">Other<br/>
+                                            <br/>
+                                            
+                                            Notes<br/>
+                                            <small class="subtext">Please provide any additional information that you'd like for us to know here.</small><br/>
+                                            <textarea rows="7" cols="30" name="Notes"></textarea>
+                                            <br/><br/>
+                                            
+                                            
+                                            <input style="width:80px;" type="submit">
+                                                </form>
+
+
+    </div>
+    <br><br/>
+    <div style="display:inline;">
+        <a class="anchorsection" name="advise"><h2>ADVISE&nbsp;&nbsp;</h2></a>
+        </br>
+        <hr width="100%" color="#BABABA" align="left" width="2px" noshade/>
+
+    </div>
+    <br><br/>
+    <div style="display:inline;">
+        <a class="anchorsection" name="donate"><h2>DONATE&nbsp;&nbsp;</h2></a>
+        </br>
+        <hr width="100%" color="#BABABA" align="left" width="2px" noshade/>
+    </div>
+    <br><br/>
+    <div style="display:inline;">
+        <a class="anchorsection" name="other"><h2>OTHER&nbsp;&nbsp;</h2></a>
+        </br>
+        <hr width="100%" color="#BABABA" align="left" width="2px" noshade/>
+    </div>
+
+    
+    
+	<br><br/><br/>
+</div>
+</body>
+</html>

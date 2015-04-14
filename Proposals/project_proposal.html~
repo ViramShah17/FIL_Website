@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  <title>Frugal Innovation Lab - Project Proposals</title>
+
+  <style type="text/css">
+  		input {
+  			width:100%;
+  		}
+
+  		textarea {
+  			width:100%;
+  		}
+
+  		small {
+  			font-size:8.5px;
+  		}
+
+  </style>
+</head>
+<body>
+<div id="navigation">
+	<a href="index.html" style="float:left;"><img src="logo_white.png" style="width:200px;"></a>	
+	<a href="studentresume.html">resumes</a>
+	<a href="project_proposal.html">proposals</a>
+	<a href="forum.php">forum</a>
+	<a href="quiz.html">quiz</a>
+	<a href="donations.html">donate</a>
+	<a href="team.html">the team</a>
+	<a href="projects.html">projects</a>
+	<a href="index.html">home</a>
+</div>
+
+<!-- put all content in "wrapper" div-->
+<div class="wrapper">
+	<h1>Proposals</h1>
+	<hr width="100%" color="#BABABA" align="left" width="2px" noshade>
+	Have any ideas for the future of the Frugal Innovation Lab? 
+	Potential partners can submit their ideas here!
+
+	<form action="proposal_complete.php" method="post">
+
+	<br><br/><br/><br/><br/><br/><br/><br/>
+	YOUR INFORMATION<br/><br/>
+	<hr width="100%" color="#BABABA" align="left" width="2px" noshade>
+
+		Name *<br/>
+		<input type="text" name="FirstName" placeholder="First" style="max-width:130px;" required>
+		<input type="text" name="LastName" placeholder="Last" style="max-width:130px;" required><br><br>
+
+		Email Address *<br/>
+		<input type="email" name="Email" required><br><br>
+
+		Your Organization's Website *<br/>
+		<input type="url" name="Website" value="http://" required><br/><br/>
+
+		Your Role/Title *<br/>
+		<small class="subtext">CEO</small><br/>
+		<input type="text" name="Title" required>
+
+
+	<br><br/><br/><br/><br/><br/><br/><br/><br/>
+	PROJECT DESCRIPTION<br/><br/>
+	<hr width="100%" color="#BABABA" align="left" width="2px" noshade>
+
+		Project Title *
+		<input type="text" name="ProjectTitle" required><br/><br/>
+
+		Project Category (Most Applicable) *<br/>
+		<small class="subtext">How would you classify your project?</small><br/>
+		<select name="Category" required>
+			<option name="Category" value="Renewable_Energy">Renewable Energy</option>
+			<option name="Category" value="Public_Health">Public Health</option>
+			<option name="Category" value="Clean_Water">Clean Water</option>
+			<option name="Category" value="Agriculture">Agriculture</option>
+			<option name="Category" value="Livelihood_Devp">Livelihood Development</option>
+			<option name="Category" value="Mobile_Tools">Mobile Tools</option>
+			<option name="Category" value="Other">Other</option>
+		</select>
+		<br/><br/>
+		Project Summary *<br/>
+		<small class="subtext">In a paragraph, please briefly describe the project.</small><br/>
+		<input type="text" name="ProjectIdea" required><br/>
+		<!--<textarea rows="7" cols="30" name="ProjectIdea" required></textarea>-->
+		<br/><br/>
+
+		Project Partners *<br/>
+		<small class="subtext">Are there any other organizations/schools working with you on this particular project? If yes, please list.</small><br/>
+		<input type="text" name="Partners" required><br/><br/>
+
+		Outcome of Project *<br/>
+		<small class="subtext">What do you want the result of this project to be?</small><br/>
+		<input type="text" name="Outcome" placeholder="e.g. A working prototype of a mobile application for artisans in Uganda to have better market access." required><br/><br/>
+
+	<br><br/><br/><br/><br/><br/><br/><br/><br/>
+	PROJECT SPECIFICATIONS<br/><br/>
+	<hr width="100%" color="#BABABA" align="left" width="2px" noshade>
+
+		Timeline *<br/>
+		<small class="subtext">Give us an idea of scope - how long do you think the project will take, and when do you need the outcome to be accomplished (end date)?</small><br/>
+		<input type="text" name="Timeline" placeholder="e.g. To achieve the desired outcome, we believe the project will take at least 8 months. Ideally, we would have ..." required><br/><br/>
+
+		Commitment of Your Team *<br/>
+		<small class="subtext">How much time do you have to mentor your student team during the project? (Per Week)</small><br/>
+		<select name="Commitment" required>
+			<option name="Commitment" value="30Min">30 Minutes</option>
+			<option name="Commitment" value="1Hr">1 Hour</option>
+			<option name="Commitment" value="2Hr">2 Hours</option>
+			<option name="Commitment" value="Flexible">Flexible based on student needs</option>
+		</select><br/><br/>
+
+		Immersion Hosting *<br/>
+		<small class="subtext">Is there the possibility of your organization hosting students in the field?</small><br/>
+		<select name="Immersion">
+			<option name="Immersion" value="Yes">Yes</option>
+			<option name="Immersion" value="No">No</option>
+			<option name="Immersion" value="Depends">Depends</option>
+		</select><br/><br/>
+
+		Disciplines Required *<br/>
+		<legend name="Disciplines" required><small class="subtext">What qualifications do you need in a student team?</small></legend>
+		<input type="checkbox" name="Disciplines[]" value="Bioengineering" style="width:20px;">Bioengineering<br/>
+		<input type="checkbox" name="Disciplines[]" value="ComputerEngineering" style="width:20px;">Computer Engineering<br/>
+		<input type="checkbox" name="Disciplines[]" value="CivilEngineering" style="width:20px;">Civil Engineering<br/>
+		<input type="checkbox" name="Disciplines[]" value="MechanicalEngineering" style="width:20px;">Mechanical Engineering<br/>
+		<input type="checkbox" name="Disciplines[]" value="ElectricalEngineering" style="width:20px;">Electrical Engineering<br/>
+		<input type="checkbox" name="Disciplines[]" value="Business" style="width:20px;">Business<br/>
+		<input type="checkbox" name="Disciplines[]" value="Law" style="width:20px;">Law<br/>
+		<input type="checkbox" name="Disciplines[]" value="PublicHealth" style="width:20px;">Public Health<br/>
+		<input type="checkbox" name="Disciplines[]" value="Humanities" style="width:20px;">Humanities<br/>
+		<input type="checkbox" name="Disciplines[]" value="Sciences" style="width:20px;">Sciences (Biology, Environmental, etc.)<br/>
+		<input type="checkbox" name="Disciplines[]" value="PublicPolicy" style="width:20px;">Public Policy<br/>
+		<input type="checkbox" name="Disciplines[]" value="Other" style="width:20px;">Other<br/>
+		<br/>
+		Funding *<br/>
+		<small class="subtext">What funds are available from you/your organization to support a project team to develop your solution?</small><br/>
+		<input type="text" name="Funding" value="$" required><br/><br/>
+
+		Intellectual Property *<br/>
+		<small class="subtext">Are there any IP considerations going into the project that we need to be aware of? Also, what expectations does your organization have regarding IP developed with the Frugal Innovation Lab?</small><br/>
+		<input type="text" name="IntellectualProperty" required>
+
+<br><br/><br/><br/><br/><br/><br/><br/><br/>
+	THANK YOU!<br/><br/>
+	<hr width="100%" color="#BABABA" align="left" width="2px" noshade>
+
+		<legend name="Hear">How did you hear about us?</legend>
+		<input type="checkbox" name="Hear[]" value="Tech" style="width:20px;">Tech Awards / Tech Museum<br/>
+		<input type="checkbox" name="Hear[]" value="GSBI" style="width:20px;">GSBI / CSTS<br/>
+		<input type="checkbox" name="Hear[]" value="FieldPartners" style="width:20px;">Field Partners<br/>
+		<input type="checkbox" name="Hear[]" value="UniversityPartners" style="width:20px;">University Partners<br/>
+		<input type="checkbox" name="Hear[]" value="CorporatePartners" style="width:20px;">Corporate Partners<br/>
+		<input type="checkbox" name="Hear[]" value="SearchEngine" style="width:20px;">Search Engine<br/>
+		<input type="checkbox" name="Hear[]" value="Other" style="width:20px;">Other<br/>
+		<br/>
+
+		Notes<br/>
+		<small class="subtext">Please provide any additional information that you'd like for us to know here.</small><br/>
+		<input type="text" name="Notes"><br/>
+		<!--<textarea rows="7" cols="30" name="Notes"></textarea>-->
+ <br/><br/>
+
+
+		<input style="width:80px;" type="submit">
+	</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" media="screen" href="../Styles/style.css">
+  <title>Frugal Innovation Lab - Post to Forum</title>
+</head>
+<body>
+    <div id="navigation">
+        <a href="../Home/index.html" style="float:left;"><img src="../Images/logo_white.png" style="width:200px;"></a>
+        <a href="../Resume/studentresume.html">resumes</a>
+        <a href="../Proposals/project_proposal.html">proposals</a>
+        <a href="../Forum/post_to_forum.html">forum</a>
+        <a href="../Donations/donations.html">donate</a>
+        <a href="../Team/team.html">the team</a>
+        <a href="../Projects/projects.xml">projects</a>
+        
+    </div>
+<!-- put all content in "wrapper" div-->
+<div class="wrapper">
+	<h1>Forum</h1>
+	<hr width="100%" color="#BABABA" align="left" width="2px" noshade>
+	Post to the forum for project updates and FIL inquiries!
+	<br><br/><br/>
+	<form action="submit_to_forum.php" method="post">
+		First Name: <input type="text" name="FirstName"><br>
+		<br>
+		Last Name: <input type="text" name="LastName"><br>
+		<br>
+		E-mail:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="Email"><br>
+		<br>
+		Post Title: &nbsp;&nbsp;&nbsp;<input type="text" name="PostTitle"><br>
+		<br>
+		Update/Inquiry: <br><textarea name="PostContent" rows="10" cols="30" placeholder="Enter your update or inquiry here. 800 characters allowed."></textarea><br>
+		<br>
+			
+		<input type="submit">
+	</form>
+	<br/><br/>
+	<big><big><a href="forum.php">Click here to see the forum!</a></big></big>
+</div>
+</body>
+</html>
